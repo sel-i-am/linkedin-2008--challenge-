@@ -1,0 +1,182 @@
+```css
+/* Very simple, beginner-friendly CSS */
+/* No fancy stuff, just basics to style a LinkedIn-like login page */
+
+/* Reset a few things */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+/* Simple header with a fake logo */
+.header {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  color: #0a66c2; /* LinkedIn-ish blue */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Main area with a short intro and the login box */
+.main {
+  padding: 24px;
+}
+
+/* Simple title and subtitle */
+.title {
+  color: #0a66c2;
+  font-size: 28px;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+/* The login card */
+.card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 380px;
+  background: #fff;
+}
+
+/* Form fields stacked vertically */
+.form {
+  display: block;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Simple checkbox row */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 8px 0 16px 0;
+  font-size: 14px;
+}
+
+.link {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Primary sign-in button */
+.btn-primary {
+  background: #0a66c2;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0959a8;
+}
+
+/* Light gray alternative button */
+.btn-light {
+  background: #eef3f8;
+  color: #222;
+}
+
+.btn-light:hover {
+  background: #e3eef9;
+}
+
+/* A small divider with "or" */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #777;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+/* Little helper text */
+.helper {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Footer area with tiny links */
+.footer {
+  margin-top: 32px;
+  padding: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+/* Make things look okay on wider screens without complex layouts */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  /* Simple two-column feel using flex */
+  .layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .left {
+    flex: 1;
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+```

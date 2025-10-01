@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedIn (2008) – Mock Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Simple top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="logo" aria-label="LinkedIn logo">
+        <span class="logo__text">Linked<span class="logo__in">In</span></span>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">What is LinkedIn?</a></li>
+          <li><a href="#" class="nav__link">Join Today</a></li>
+          <li><a href="#" class="nav__link">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Subtle divider -->
+  <div class="bar"></div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero__left">
+        <h1 class="hero__title">
+          Over 24 million professionals use LinkedIn to exchange information, ideas and opportunities
+        </h1>
+        <ul class="benefits">
+          <li><strong>Stay informed</strong> about your contacts and industry</li>
+          <li><strong>Find the people &amp; knowledge</strong> you need to achieve your goals</li>
+          <li><strong>Control your professional identity</strong> online</li>
+        </ul>
+      </div>
+
+      <aside class="join-card" aria-label="Join LinkedIn form">
+        <h2 class="join-card__title">Join LinkedIn Today</h2>
+        <form class="form" action="#" method="post">
+          <label for="firstName">First Name:</label>
+          <input id="firstName" name="firstName" type="text" required />
+
+          <label for="lastName">Last Name:</label>
+          <input id="lastName" name="lastName" type="text" required />
+
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" required />
+
+          <button type="submit" class="btn btn--primary">Continue</button>
+
+          <p class="small">
+            Already on LinkedIn? <a href="#">Sign in</a>.
+          </p>
+        </form>
+      </aside>
+    </section>
+
+    <section class="search">
+      <h3>Search for someone by name:</h3>
+      <form class="search__form" action="#" method="get">
+        <input type="text" placeholder="First Name" aria-label="First name" />
+        <input type="text" placeholder="Last Name" aria-label="Last name" />
+        <button class="btn">Go</button>
+      </form>
+
+      <div class="directory">
+        <span>People directory:</span>
+        <nav aria-label="Alphabet directory">
+          <ul class="alphabet">
+            <li><a href="#">A</a></li><li><a href="#">B</a></li><li><a href="#">C</a></li>
+            <li><a href="#">D</a></li><li><a href="#">E</a></li><li><a href="#">F</a></li>
+            <li><a href="#">G</a></li><li><a href="#">H</a></li><li><a href="#">I</a></li>
+            <li><a href="#">J</a></li><li><a href="#">K</a></li><li><a href="#">L</a></li>
+            <li><a href="#">M</a></li><li><a href="#">N</a></li><li><a href="#">O</a></li>
+            <li><a href="#">P</a></li><li><a href="#">Q</a></li><li><a href="#">R</a></li>
+            <li><a href="#">S</a></li><li><a href="#">T</a></li><li><a href="#">U</a></li>
+            <li><a href="#">V</a></li><li><a href="#">W</a></li><li><a href="#">X</a></li>
+            <li><a href="#">Y</a></li><li><a href="#">Z</a></li>
+            <li><a href="#">more</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About LinkedIn</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">User Agreement</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">LinkedIn Jobs</a></li>
+          <li><a href="#">LinkedIn Answers</a></li>
+          <li><a href="#">Widgets</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <small>LinkedIn Corporation © 2008 (mock). This page is a beginner exercise.</small>
+    </div>
+  </footer>
+</body>
+</html>
